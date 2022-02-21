@@ -1,6 +1,6 @@
 ﻿namespace Daelimi
 {
-    partial class Form1
+    partial class DaelimiForm
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.

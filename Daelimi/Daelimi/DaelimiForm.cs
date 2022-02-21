@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Daelimi
 {
-    public partial class Form1 : Form
+    public partial class DaelimiForm : Form
     {
-        public Form1()
+        public DaelimiForm()
         {
             InitializeComponent();
         }
