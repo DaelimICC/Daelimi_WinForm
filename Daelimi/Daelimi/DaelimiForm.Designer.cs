@@ -28,20 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.FormBar = new System.Windows.Forms.Panel();
+            this.FormClose = new System.Windows.Forms.Panel();
+            this.FormMini = new System.Windows.Forms.Panel();
+            this.FormBar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Form1
+            // FormBar
+            // 
+            this.FormBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(89)))), ((int)(((byte)(205)))));
+            this.FormBar.Controls.Add(this.FormClose);
+            this.FormBar.Controls.Add(this.FormMini);
+            this.FormBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.FormBar.Location = new System.Drawing.Point(0, 0);
+            this.FormBar.Name = "FormBar";
+            this.FormBar.Size = new System.Drawing.Size(269, 39);
+            this.FormBar.TabIndex = 0;
+            // 
+            // FormClose
+            // 
+            this.FormClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.FormClose.BackgroundImage = global::Daelimi.Properties.Resources.underbar;
+            this.FormClose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.FormClose.Location = new System.Drawing.Point(204, 18);
+            this.FormClose.Name = "FormClose";
+            this.FormClose.Size = new System.Drawing.Size(24, 17);
+            this.FormClose.TabIndex = 1;
+            // 
+            // FormMini
+            // 
+            this.FormMini.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.FormMini.BackgroundImage = global::Daelimi.Properties.Resources.Close;
+            this.FormMini.Location = new System.Drawing.Point(235, 5);
+            this.FormMini.Name = "FormMini";
+            this.FormMini.Size = new System.Drawing.Size(30, 30);
+            this.FormMini.TabIndex = 0;
+            // 
+            // DaelimiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(256, 356);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(269, 450);
+            this.Controls.Add(this.FormBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "DaelimiForm";
+            this.Text = "Daelimi";
+            this.FormBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel FormBar;
+        private System.Windows.Forms.Panel FormMini;
+        private System.Windows.Forms.Panel FormClose;
     }
 }
 
