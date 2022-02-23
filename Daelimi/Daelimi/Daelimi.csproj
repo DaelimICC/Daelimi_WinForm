@@ -46,20 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BarControll.cs">
+    <Compile Include="DaelimiForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DaelimiForm.cs">
+    <Compile Include="DaelimiForm_Active.cs">
+      <DependentUpon>DaelimiForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controll_Bar.cs">
+      <DependentUpon>DaelimiForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controll_Message.cs">
+      <DependentUpon>DaelimiForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DaelimiForm.Designer.cs">
       <DependentUpon>DaelimiForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DaelimiForm_Active.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MessageControll.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send_Pop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Chat\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,10 +17,16 @@ namespace Daelimi
         {
             PlaceHolder();
             Send.Click += SendOnClick;
+            Send.MouseHover += (sender, args) => Send.BackgroundImage = Properties.Resources.send_Pop;
+            Send.MouseLeave += (sender, args) => Send.BackgroundImage = Properties.Resources.send;
         }
+        
         private void SendOnClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            UserQustion = MessageBox.Text;
+            MessageBox.Text = String.Empty;
+            MessageBox.Enabled = false;
+            MessageBox.Enabled = true;
         }
         #endregion
 

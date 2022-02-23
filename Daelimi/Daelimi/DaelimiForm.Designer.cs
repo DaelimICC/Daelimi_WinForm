@@ -32,9 +32,9 @@ namespace Daelimi
         {
             this.FormBar = new System.Windows.Forms.Panel();
             this.Pl_Message = new System.Windows.Forms.Panel();
-            this.Container = new System.Windows.Forms.Panel();
-            this.MessageBox = new System.Windows.Forms.RichTextBox();
             this.Send = new System.Windows.Forms.Panel();
+            this.MessageBox = new System.Windows.Forms.RichTextBox();
+            this.Container = new System.Windows.Forms.Panel();
             this.FormMinii = new System.Windows.Forms.Panel();
             this.FormClose = new System.Windows.Forms.Panel();
             this.FormBar.SuspendLayout();
@@ -64,28 +64,6 @@ namespace Daelimi
             this.Pl_Message.Size = new System.Drawing.Size(302, 88);
             this.Pl_Message.TabIndex = 1;
             // 
-            // Container
-            // 
-            this.Container.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Container.Location = new System.Drawing.Point(0, 39);
-            this.Container.Name = "Container";
-            this.Container.Size = new System.Drawing.Size(302, 342);
-            this.Container.TabIndex = 2;
-            // 
-            // MessageBox
-            // 
-            this.MessageBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.MessageBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MessageBox.Font = new System.Drawing.Font("굴림", 12F);
-            this.MessageBox.ForeColor = (Color)Color.Silver;
-            this.MessageBox.Location = new System.Drawing.Point(10, 10);
-            this.MessageBox.Name = "MessageBox";
-            this.MessageBox.Size = new System.Drawing.Size(242, 68);
-            this.MessageBox.TabIndex = 0;
-            this.MessageBox.TabStop = false;
-            this.MessageBox.Text = "문의할 메세지를 입력하시오.";
-            // 
             // Send
             // 
             this.Send.BackgroundImage = global::Daelimi.Properties.Resources.send;
@@ -95,6 +73,28 @@ namespace Daelimi
             this.Send.Name = "Send";
             this.Send.Size = new System.Drawing.Size(34, 68);
             this.Send.TabIndex = 1;
+            // 
+            // MessageBox
+            // 
+            this.MessageBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.MessageBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MessageBox.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.MessageBox.ForeColor = System.Drawing.Color.Silver;
+            this.MessageBox.Location = new System.Drawing.Point(10, 10);
+            this.MessageBox.Name = "MessageBox";
+            this.MessageBox.Size = new System.Drawing.Size(242, 68);
+            this.MessageBox.TabIndex = 0;
+            this.MessageBox.TabStop = false;
+            this.MessageBox.Text = "문의할 메세지를 입력하시오.";
+            // 
+            // Container
+            // 
+            this.Container.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Container.Location = new System.Drawing.Point(0, 39);
+            this.Container.Name = "Container";
+            this.Container.Size = new System.Drawing.Size(302, 342);
+            this.Container.TabIndex = 2;
             // 
             // FormMinii
             // 

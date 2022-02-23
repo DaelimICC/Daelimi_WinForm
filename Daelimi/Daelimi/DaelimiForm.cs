@@ -12,13 +12,13 @@ namespace Daelimi
 {
     public partial class DaelimiForm : Form
     {
+        private String UserQustion = String.Empty;
         public DaelimiForm()
         {
             InitializeComponent();
 
             Controll_Bar();
             MessageControll();
-
         }
 
     }
