@@ -9,7 +9,7 @@ namespace Daelimi
 {
     public partial class DaelimiForm : Form
     {
-        #region 상단바 커스텀
+        #region 상단바 상호작용
         private void Controll_Bar()
         {
             FormBar.MouseUp += FormBar_MouseUp;

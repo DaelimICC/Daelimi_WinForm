@@ -17,6 +17,8 @@ namespace Daelimi
             InitializeComponent();
 
             Controll_Bar();
+            MessageControll();
+
         }
 
     }

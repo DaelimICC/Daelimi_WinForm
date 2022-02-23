@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DaelimForm_BarControll.cs">
+    <Compile Include="BarControll.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DaelimiForm.cs">
@@ -56,6 +56,9 @@
       <DependentUpon>DaelimiForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DaelimiForm_Active.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageControll.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Program.cs" />

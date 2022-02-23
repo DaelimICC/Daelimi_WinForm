@@ -1,4 +1,6 @@
-﻿namespace Daelimi
+﻿using System.Drawing;
+
+namespace Daelimi
 {
     partial class DaelimiForm
     {
@@ -76,11 +78,13 @@
             this.MessageBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.MessageBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MessageBox.Font = new System.Drawing.Font("굴림", 12F);
+            this.MessageBox.ForeColor = (Color)Color.Silver;
             this.MessageBox.Location = new System.Drawing.Point(10, 10);
             this.MessageBox.Name = "MessageBox";
             this.MessageBox.Size = new System.Drawing.Size(242, 68);
             this.MessageBox.TabIndex = 0;
-            this.MessageBox.Text = "";
+            this.MessageBox.TabStop = false;
+            this.MessageBox.Text = "문의할 메세지를 입력하시오.";
             // 
             // Send
             // 
