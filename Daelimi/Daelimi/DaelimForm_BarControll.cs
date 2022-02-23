@@ -15,8 +15,8 @@ namespace Daelimi
             FormBar.MouseUp += FormBar_MouseUp;
             FormBar.MouseDown += FormBar_MouseDown;
             FormBar.MouseMove += FormBar_MouseMove;
+            FormMinii.Click += Form_Minmon;
             FormClose.Click += Form_Close;
-            FormMini.Click += Form_Minmon;
         }
 
         bool isMove;

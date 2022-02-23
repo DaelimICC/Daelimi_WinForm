@@ -15,6 +15,7 @@ namespace Daelimi
         public DaelimiForm()
         {
             InitializeComponent();
+
             Controll_Bar();
         }
 

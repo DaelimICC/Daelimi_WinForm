@@ -29,51 +29,101 @@
         private void InitializeComponent()
         {
             this.FormBar = new System.Windows.Forms.Panel();
+            this.Pl_Message = new System.Windows.Forms.Panel();
+            this.Container = new System.Windows.Forms.Panel();
+            this.MessageBox = new System.Windows.Forms.RichTextBox();
+            this.Send = new System.Windows.Forms.Panel();
+            this.FormMinii = new System.Windows.Forms.Panel();
             this.FormClose = new System.Windows.Forms.Panel();
-            this.FormMini = new System.Windows.Forms.Panel();
             this.FormBar.SuspendLayout();
+            this.Pl_Message.SuspendLayout();
             this.SuspendLayout();
             // 
             // FormBar
             // 
             this.FormBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(89)))), ((int)(((byte)(205)))));
+            this.FormBar.Controls.Add(this.FormMinii);
             this.FormBar.Controls.Add(this.FormClose);
-            this.FormBar.Controls.Add(this.FormMini);
             this.FormBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.FormBar.Location = new System.Drawing.Point(0, 0);
             this.FormBar.Name = "FormBar";
-            this.FormBar.Size = new System.Drawing.Size(269, 39);
+            this.FormBar.Size = new System.Drawing.Size(302, 39);
             this.FormBar.TabIndex = 0;
+            // 
+            // Pl_Message
+            // 
+            this.Pl_Message.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(251)))));
+            this.Pl_Message.Controls.Add(this.Send);
+            this.Pl_Message.Controls.Add(this.MessageBox);
+            this.Pl_Message.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Pl_Message.Location = new System.Drawing.Point(0, 381);
+            this.Pl_Message.Name = "Pl_Message";
+            this.Pl_Message.Padding = new System.Windows.Forms.Padding(10);
+            this.Pl_Message.Size = new System.Drawing.Size(302, 88);
+            this.Pl_Message.TabIndex = 1;
+            // 
+            // Container
+            // 
+            this.Container.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Container.Location = new System.Drawing.Point(0, 39);
+            this.Container.Name = "Container";
+            this.Container.Size = new System.Drawing.Size(302, 342);
+            this.Container.TabIndex = 2;
+            // 
+            // MessageBox
+            // 
+            this.MessageBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.MessageBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MessageBox.Font = new System.Drawing.Font("굴림", 12F);
+            this.MessageBox.Location = new System.Drawing.Point(10, 10);
+            this.MessageBox.Name = "MessageBox";
+            this.MessageBox.Size = new System.Drawing.Size(242, 68);
+            this.MessageBox.TabIndex = 0;
+            this.MessageBox.Text = "";
+            // 
+            // Send
+            // 
+            this.Send.BackgroundImage = global::Daelimi.Properties.Resources.send;
+            this.Send.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Send.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Send.Location = new System.Drawing.Point(258, 10);
+            this.Send.Name = "Send";
+            this.Send.Size = new System.Drawing.Size(34, 68);
+            this.Send.TabIndex = 1;
+            // 
+            // FormMinii
+            // 
+            this.FormMinii.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.FormMinii.BackgroundImage = global::Daelimi.Properties.Resources.underbar;
+            this.FormMinii.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.FormMinii.Location = new System.Drawing.Point(237, 18);
+            this.FormMinii.Name = "FormMinii";
+            this.FormMinii.Size = new System.Drawing.Size(24, 17);
+            this.FormMinii.TabIndex = 1;
             // 
             // FormClose
             // 
             this.FormClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FormClose.BackgroundImage = global::Daelimi.Properties.Resources.underbar;
-            this.FormClose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.FormClose.Location = new System.Drawing.Point(204, 18);
+            this.FormClose.BackgroundImage = global::Daelimi.Properties.Resources.Close;
+            this.FormClose.Location = new System.Drawing.Point(268, 5);
             this.FormClose.Name = "FormClose";
-            this.FormClose.Size = new System.Drawing.Size(24, 17);
-            this.FormClose.TabIndex = 1;
-            // 
-            // FormMini
-            // 
-            this.FormMini.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FormMini.BackgroundImage = global::Daelimi.Properties.Resources.Close;
-            this.FormMini.Location = new System.Drawing.Point(235, 5);
-            this.FormMini.Name = "FormMini";
-            this.FormMini.Size = new System.Drawing.Size(30, 30);
-            this.FormMini.TabIndex = 0;
+            this.FormClose.Size = new System.Drawing.Size(30, 30);
+            this.FormClose.TabIndex = 0;
             // 
             // DaelimiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(269, 450);
+            this.ClientSize = new System.Drawing.Size(302, 469);
+            this.Controls.Add(this.Container);
+            this.Controls.Add(this.Pl_Message);
             this.Controls.Add(this.FormBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DaelimiForm";
             this.Text = "Daelimi";
             this.FormBar.ResumeLayout(false);
+            this.Pl_Message.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -81,8 +131,12 @@
         #endregion
 
         private System.Windows.Forms.Panel FormBar;
-        private System.Windows.Forms.Panel FormMini;
         private System.Windows.Forms.Panel FormClose;
+        private System.Windows.Forms.Panel FormMinii;
+        private System.Windows.Forms.Panel Pl_Message;
+        private System.Windows.Forms.Panel Container;
+        private System.Windows.Forms.Panel Send;
+        private System.Windows.Forms.RichTextBox MessageBox;
     }
 }
 
