@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D32F0970-E130-4494-989E-D59DD310B701}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>Daelimi</RootNamespace>
-    <AssemblyName>Daelimi</AssemblyName>
+    <ProjectGuid>{BEA429D6-5330-4134-9B15-5459D27131E6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AIChat</RootNamespace>
+    <AssemblyName>AIChat</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,80 +30,55 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AIChat">
-      <HintPath>..\AIChat\obj\Debug\AIChat.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DaelimiForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Ai_Chat.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DaelimiForm_Active.cs">
-      <DependentUpon>DaelimiForm.cs</DependentUpon>
-      <SubType>Form</SubType>
+    <Compile Include="Ai_Chat.Designer.cs">
+      <DependentUpon>Ai_Chat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controll_Bar.cs">
-      <DependentUpon>DaelimiForm.cs</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Controll_Message.cs">
-      <DependentUpon>DaelimiForm.cs</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DaelimiForm.Designer.cs">
-      <DependentUpon>DaelimiForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DaelimiForm.resx">
-      <DependentUpon>DaelimiForm.cs</DependentUpon>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ai_Chat.resx">
+      <DependentUpon>Ai_Chat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="img\top.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Close.png" />
+    <None Include="img\bottom.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\underbar.png" />
+    <None Include="img\main.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\send.png" />
+    <None Include="Resources\pngwing.com.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\send_Pop.png" />
+    <None Include="img\tail.png" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
