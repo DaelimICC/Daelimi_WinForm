@@ -15,6 +15,8 @@ namespace Daelimi
         private String UserQustion = String.Empty;
         public DaelimiForm()
         {
+            m_aeroEnabled = true;
+            this.FormBorderStyle = FormBorderStyle.None;
             InitializeComponent();
 
             Controll_Bar();
