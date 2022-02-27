@@ -12,22 +12,14 @@ namespace AIChat
 {
     public partial class Ai_Chat: UserControl
     {
-        public Ai_Chat()
+        public Ai_Chat(string text)
         {
             InitializeComponent();
+            Ai_ChatText.Text = text;
         }
-
-        [Category("UserProperty"), Description("Text")]
-        public string Ai_Text
+        public void SetSize()
         {
-            get
-            {
-                return this.Ai_ChatText.Text;
-            }
-            set
-            {
-                this.Ai_ChatText.Text = value;
-            }
+            Null.Width = 260 - Ai_ChatText.Width + 8;
         }
     }
 }

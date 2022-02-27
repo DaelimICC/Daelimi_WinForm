@@ -11,7 +11,6 @@ namespace Daelimi
 
     public partial class DaelimiForm : Form
     {
-
         #region 메세지박스 상호작용
         private void MessageControll()
         {
@@ -20,13 +19,20 @@ namespace Daelimi
             Send.MouseHover += (sender, args) => Send.BackgroundImage = Properties.Resources.send_Pop;
             Send.MouseLeave += (sender, args) => Send.BackgroundImage = Properties.Resources.send;
         }
-        
         private void SendOnClick(object sender, EventArgs e)
         {
-            UserQustion = MessageBox.Text;
-            MessageBox.Text = String.Empty;
-            MessageBox.Enabled = false;
-            MessageBox.Enabled = true;
+            if (MessageBox.Text != FAQPlaceholder)
+            {
+                if (MessageBox.Text != string.Empty)
+                {
+                    UserQustion = MessageBox.Text;
+                    User_AddChat(UserQustion);
+                    Ai_AddChat(UserQustion); 
+                    MessageBox.Text = String.Empty;
+                    MessageBox.Enabled = false;
+                    MessageBox.Enabled = true;
+                }
+            }
         }
         #endregion
 
@@ -57,5 +63,6 @@ namespace Daelimi
         }
 
         #endregion
+        
     }
 }

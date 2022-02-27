@@ -117,47 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="underbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\underbar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Top.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAANsAAAAOCAYAAACmcGncAAAABGdBTUEAALGPC/xhBQAAAQhJREFUaEPt
+        2D8uBHEchnGVQtQSEhzBaYTKTVxCQavZxg0ktG6gcAjRUjCed4rJjPmuf7sjkX0+yVPMr/692Z1Zk/RH
+        mqZZpF06oTO6pgd6pGeS/qsXyj3Ofc69zv3OPc99r3bwrcrDL9qjU7onadXk3uf+71O1j7mVh3M6oCt6
+        JWnVZQfZQ3ZR7WVUefihLbqkN5I0lF1kH9lJtZ+u8rDXIT2RpM9lJ9lLtaO28pDW6Zwk/cwFZT+jXY0O
+        aJPyBUbS72Q/2dFgW4MH2qA7krSY7Ch76vbVH1p++m5J0nLcUPeXsj8239Gk5cs73GBsRyRpGsfUjm2b
+        /LwvTSf72snYZu2jpAk1s3czHat3ZheuOQAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="pngwing.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngwing.com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ai_bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ai_bottom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ai_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ai_top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ai_main" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ai_main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ai_tail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ai_tail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="send_Pop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\send_Pop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="send" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\send.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User_tail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\User_tail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User_main" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\User_main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\User_top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FAQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FAQ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="User_bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\User_bottom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bottom.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAANsAAAAOCAYAAACmcGncAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAARFJREFUaEPt2TFqwmAchvFMDqWzYMH2CJ5GdOpNegmHdu3i0hsIunoDhx5CXOtg
+        0/cNGBLzlxg1QvH5wTPkm78XjSZpmk4VgHZNPbYntckeAbTB++p5bG7sEwCtGKlkPzb3oQBc17vKNlYc
+        W0fNFYDrWCjvqjI296CWCsBlvCPvKd9XcWj7HtVMATiP9+MdlbZVeijkjz7e4YDm/I6Wf3UsVjk4aKj4
+        WwCo5514L9GOssLDg7rqU/0qAGXehffhnUT7yQsPjzRQX2qngHvnHXgP3kW0l0rhYU0v6k2tFHBvfO99
+        /59VtI+jhYcN6qtXNVH+BeZbrdVWAf/Vj/I99n32vfb99j33fY92cFIAbiJJ/gBv+at3JN2fBAAAAABJ
+        RU5ErkJggg==
+</value>
   </data>
 </root>

@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.Ai_Profile = new System.Windows.Forms.Panel();
+            this.tail = new System.Windows.Forms.Panel();
+            this.picture35x35 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.Main = new System.Windows.Forms.Panel();
             this.Ai_ChatText = new System.Windows.Forms.Label();
             this.Top = new System.Windows.Forms.Panel();
             this.Bottom = new System.Windows.Forms.Panel();
-            this.tail = new System.Windows.Forms.Panel();
-            this.picture35x35 = new System.Windows.Forms.Panel();
             this.Ai_Profile.SuspendLayout();
             this.Main.SuspendLayout();
             this.SuspendLayout();
@@ -47,8 +47,26 @@
             this.Ai_Profile.Dock = System.Windows.Forms.DockStyle.Left;
             this.Ai_Profile.Location = new System.Drawing.Point(0, 0);
             this.Ai_Profile.Name = "Ai_Profile";
-            this.Ai_Profile.Size = new System.Drawing.Size(65, 72);
+            this.Ai_Profile.Size = new System.Drawing.Size(65, 68);
             this.Ai_Profile.TabIndex = 0;
+            // 
+            // tail
+            // 
+            this.tail.BackgroundImage = global::AIChat.Properties.Resources.tail;
+            this.tail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tail.Location = new System.Drawing.Point(40, 14);
+            this.tail.Name = "tail";
+            this.tail.Size = new System.Drawing.Size(25, 23);
+            this.tail.TabIndex = 1;
+            // 
+            // picture35x35
+            // 
+            this.picture35x35.BackgroundImage = global::AIChat.Properties.Resources.pngwing_com;
+            this.picture35x35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picture35x35.Location = new System.Drawing.Point(7, 4);
+            this.picture35x35.Name = "picture35x35";
+            this.picture35x35.Size = new System.Drawing.Size(35, 35);
+            this.picture35x35.TabIndex = 0;
             // 
             // panel5
             // 
@@ -57,7 +75,7 @@
             this.panel5.Location = new System.Drawing.Point(318, 0);
             this.panel5.MinimumSize = new System.Drawing.Size(18, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(18, 72);
+            this.panel5.Size = new System.Drawing.Size(18, 68);
             this.panel5.TabIndex = 3;
             // 
             // Main
@@ -71,18 +89,19 @@
             this.Main.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.Main.Name = "Main";
             this.Main.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Main.Size = new System.Drawing.Size(253, 44);
+            this.Main.Size = new System.Drawing.Size(253, 40);
             this.Main.TabIndex = 2;
             // 
             // Ai_ChatText
             // 
             this.Ai_ChatText.AutoSize = true;
             this.Ai_ChatText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Ai_ChatText.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.Ai_ChatText.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Ai_ChatText.ForeColor = System.Drawing.SystemColors.Control;
             this.Ai_ChatText.Location = new System.Drawing.Point(4, 3);
             this.Ai_ChatText.MaximumSize = new System.Drawing.Size(219, 0);
             this.Ai_ChatText.Name = "Ai_ChatText";
-            this.Ai_ChatText.Size = new System.Drawing.Size(110, 38);
+            this.Ai_ChatText.Size = new System.Drawing.Size(102, 34);
             this.Ai_ChatText.TabIndex = 0;
             this.Ai_ChatText.Text = "안녕하세요.\r\n대림이봇입니다.";
             // 
@@ -105,29 +124,11 @@
             this.Bottom.BackgroundImage = global::AIChat.Properties.Resources.bottom;
             this.Bottom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Bottom.Location = new System.Drawing.Point(65, 58);
+            this.Bottom.Location = new System.Drawing.Point(65, 54);
             this.Bottom.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.Bottom.Name = "Bottom";
             this.Bottom.Size = new System.Drawing.Size(253, 14);
             this.Bottom.TabIndex = 2;
-            // 
-            // tail
-            // 
-            this.tail.BackgroundImage = global::AIChat.Properties.Resources.tail;
-            this.tail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tail.Location = new System.Drawing.Point(40, 14);
-            this.tail.Name = "tail";
-            this.tail.Size = new System.Drawing.Size(25, 23);
-            this.tail.TabIndex = 1;
-            // 
-            // picture35x35
-            // 
-            this.picture35x35.BackgroundImage = global::AIChat.Properties.Resources.pngwing_com;
-            this.picture35x35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picture35x35.Location = new System.Drawing.Point(7, 4);
-            this.picture35x35.Name = "picture35x35";
-            this.picture35x35.Size = new System.Drawing.Size(35, 35);
-            this.picture35x35.TabIndex = 0;
             // 
             // Ai_Chat
             // 
@@ -141,7 +142,7 @@
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.Ai_Profile);
             this.Name = "Ai_Chat";
-            this.Size = new System.Drawing.Size(336, 72);
+            this.Size = new System.Drawing.Size(336, 68);
             this.Ai_Profile.ResumeLayout(false);
             this.Main.ResumeLayout(false);
             this.Main.PerformLayout();
