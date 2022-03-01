@@ -51,7 +51,7 @@ namespace Daelimi
             this.FormBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.FormBar.Location = new System.Drawing.Point(0, 0);
             this.FormBar.Name = "FormBar";
-            this.FormBar.Size = new System.Drawing.Size(325, 39);
+            this.FormBar.Size = new System.Drawing.Size(350, 39);
             this.FormBar.TabIndex = 0;
             // 
             // icon
@@ -68,7 +68,7 @@ namespace Daelimi
             this.FormMinii.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FormMinii.BackgroundImage = global::Daelimi.Properties.Resources.underbar;
             this.FormMinii.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.FormMinii.Location = new System.Drawing.Point(260, 18);
+            this.FormMinii.Location = new System.Drawing.Point(285, 18);
             this.FormMinii.Name = "FormMinii";
             this.FormMinii.Size = new System.Drawing.Size(24, 17);
             this.FormMinii.TabIndex = 1;
@@ -77,7 +77,7 @@ namespace Daelimi
             // 
             this.FormClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FormClose.BackgroundImage = global::Daelimi.Properties.Resources.Close;
-            this.FormClose.Location = new System.Drawing.Point(291, 5);
+            this.FormClose.Location = new System.Drawing.Point(316, 5);
             this.FormClose.Name = "FormClose";
             this.FormClose.Size = new System.Drawing.Size(30, 30);
             this.FormClose.TabIndex = 0;
@@ -91,7 +91,7 @@ namespace Daelimi
             this.Pl_Message.Location = new System.Drawing.Point(0, 558);
             this.Pl_Message.Name = "Pl_Message";
             this.Pl_Message.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.Pl_Message.Size = new System.Drawing.Size(325, 77);
+            this.Pl_Message.Size = new System.Drawing.Size(350, 77);
             this.Pl_Message.TabIndex = 1;
             // 
             // Send
@@ -99,7 +99,7 @@ namespace Daelimi
             this.Send.BackgroundImage = global::Daelimi.Properties.Resources.send;
             this.Send.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Send.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Send.Location = new System.Drawing.Point(285, 0);
+            this.Send.Location = new System.Drawing.Point(310, 0);
             this.Send.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.Send.Name = "Send";
             this.Send.Size = new System.Drawing.Size(40, 77);
@@ -113,7 +113,7 @@ namespace Daelimi
             this.MessageBox.ForeColor = System.Drawing.Color.Silver;
             this.MessageBox.Location = new System.Drawing.Point(8, 8);
             this.MessageBox.Name = "MessageBox";
-            this.MessageBox.Size = new System.Drawing.Size(275, 62);
+            this.MessageBox.Size = new System.Drawing.Size(300, 62);
             this.MessageBox.TabIndex = 0;
             this.MessageBox.TabStop = false;
             this.MessageBox.Text = "문의할 메세지를 입력하시오.";
@@ -125,14 +125,14 @@ namespace Daelimi
             this.Container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Container.Location = new System.Drawing.Point(0, 39);
             this.Container.Name = "Container";
-            this.Container.Size = new System.Drawing.Size(325, 519);
+            this.Container.Size = new System.Drawing.Size(350, 519);
             this.Container.TabIndex = 2;
             // 
             // DaelimiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(325, 635);
+            this.ClientSize = new System.Drawing.Size(350, 635);
             this.Controls.Add(this.Container);
             this.Controls.Add(this.Pl_Message);
             this.Controls.Add(this.FormBar);

@@ -19,8 +19,11 @@ namespace Daelimi
                 if (MessageBox.Text != string.Empty)
                 {
                     UserQustion = MessageBox.Text;
-                    User_AddChat(UserQustion);
+                    Ai_AddChat(UserQustion);
 
+                    // Api api = new Api();
+                    // AIAnsower = api.Api_Post(UserQustion, 1);
+                    // Ai_AddChat(AIAnsower);
                     MessageRest();
                 }
             }
