@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -11,14 +12,6 @@ namespace Daelimi
 
     public partial class DaelimiForm : Form
     {
-        #region 메세지박스 상호작용
-        private void MessageControll()
-        {
-            PlaceHolder();
-            Send.Click += SendOnClick;
-            Send.MouseHover += (sender, args) => Send.BackgroundImage = Properties.Resources.send_Pop;
-            Send.MouseLeave += (sender, args) => Send.BackgroundImage = Properties.Resources.send;
-        }
         private void SendOnClick(object sender, EventArgs e)
         {
             if (MessageBox.Text != FAQPlaceholder)
@@ -27,12 +20,30 @@ namespace Daelimi
                 {
                     UserQustion = MessageBox.Text;
                     User_AddChat(UserQustion);
-                    Ai_AddChat(UserQustion); 
-                    MessageBox.Text = String.Empty;
-                    MessageBox.Enabled = false;
-                    MessageBox.Enabled = true;
+
+                    MessageRest();
                 }
             }
+        }
+        #region 메세지박스 상호작용
+        private void MessageControll()
+        {
+            PlaceHolder();
+            Send.Click += SendOnClick;
+            this.Load += OnLoad;
+            Send.MouseHover += (sender, args) => Send.BackgroundImage = Properties.Resources.send_Pop;
+            Send.MouseLeave += (sender, args) => Send.BackgroundImage = Properties.Resources.send;
+        }
+        private void OnLoad(object sender, EventArgs e)
+        {
+            Ai_AddChat(AIAnsower);
+        }
+
+        private void MessageRest()
+        {
+            MessageBox.Text = String.Empty;
+            MessageBox.Enabled = false;
+            MessageBox.Enabled = true;
         }
         #endregion
 

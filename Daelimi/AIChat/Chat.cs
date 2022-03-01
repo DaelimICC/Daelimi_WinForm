@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AIChat
 {
-    public partial class Ai_Chat: UserControl
+    public partial class Chat: UserControl
     {
-        public Ai_Chat()
+        public Chat()
         {
             InitializeComponent();
         }

@@ -43,7 +43,7 @@
             // Null
             // 
             this.Null.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Null.Location = new System.Drawing.Point(0, 0);
+            this.Null.Location = new System.Drawing.Point(0, 5);
             this.Null.MinimumSize = new System.Drawing.Size(18, 0);
             this.Null.Name = "Null";
             this.Null.Size = new System.Drawing.Size(18, 53);
@@ -54,7 +54,7 @@
             this.panel5.AutoScroll = true;
             this.panel5.Controls.Add(this.tail);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(291, 0);
+            this.panel5.Location = new System.Drawing.Point(291, 5);
             this.panel5.MinimumSize = new System.Drawing.Size(18, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(34, 53);
@@ -77,7 +77,7 @@
             this.Main.BackgroundImage = global::Daelimi.Properties.Resources.User_main;
             this.Main.Controls.Add(this.User_ChatText);
             this.Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Main.Location = new System.Drawing.Point(18, 14);
+            this.Main.Location = new System.Drawing.Point(18, 19);
             this.Main.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.Main.Name = "Main";
             this.Main.Padding = new System.Windows.Forms.Padding(4, 3, 7, 3);
@@ -102,7 +102,7 @@
             this.Top.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Top.BackgroundImage")));
             this.Top.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Top.Location = new System.Drawing.Point(18, 0);
+            this.Top.Location = new System.Drawing.Point(18, 5);
             this.Top.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.Top.Name = "Top";
             this.Top.Size = new System.Drawing.Size(273, 14);
@@ -114,7 +114,7 @@
             this.Bottom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bottom.BackgroundImage")));
             this.Bottom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Bottom.Location = new System.Drawing.Point(18, 39);
+            this.Bottom.Location = new System.Drawing.Point(18, 44);
             this.Bottom.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.Bottom.Name = "Bottom";
             this.Bottom.Size = new System.Drawing.Size(273, 14);
@@ -133,7 +133,8 @@
             this.Controls.Add(this.Null);
             this.MaximumSize = new System.Drawing.Size(325, 0);
             this.Name = "User_Chat";
-            this.Size = new System.Drawing.Size(325, 53);
+            this.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.Size = new System.Drawing.Size(325, 58);
             this.panel5.ResumeLayout(false);
             this.Main.ResumeLayout(false);
             this.Main.PerformLayout();

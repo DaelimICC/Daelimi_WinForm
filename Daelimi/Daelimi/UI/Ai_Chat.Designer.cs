@@ -46,7 +46,7 @@
             this.Ai_Profile.Controls.Add(this.tail);
             this.Ai_Profile.Controls.Add(this.picture35x35);
             this.Ai_Profile.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Ai_Profile.Location = new System.Drawing.Point(0, 0);
+            this.Ai_Profile.Location = new System.Drawing.Point(0, 5);
             this.Ai_Profile.Name = "Ai_Profile";
             this.Ai_Profile.Size = new System.Drawing.Size(65, 51);
             this.Ai_Profile.TabIndex = 0;
@@ -72,7 +72,7 @@
             // Null
             // 
             this.Null.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Null.Location = new System.Drawing.Point(206, 0);
+            this.Null.Location = new System.Drawing.Point(206, 5);
             this.Null.MinimumSize = new System.Drawing.Size(27, 0);
             this.Null.Name = "Null";
             this.Null.Size = new System.Drawing.Size(27, 51);
@@ -86,7 +86,7 @@
             this.Main.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Main.Controls.Add(this.Ai_ChatText);
             this.Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Main.Location = new System.Drawing.Point(65, 14);
+            this.Main.Location = new System.Drawing.Point(65, 19);
             this.Main.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.Main.Name = "Main";
             this.Main.Padding = new System.Windows.Forms.Padding(4, 3, 7, 3);
@@ -113,7 +113,7 @@
             this.Top.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Top.BackgroundImage")));
             this.Top.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Top.Location = new System.Drawing.Point(65, 0);
+            this.Top.Location = new System.Drawing.Point(65, 5);
             this.Top.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.Top.Name = "Top";
             this.Top.Size = new System.Drawing.Size(141, 14);
@@ -125,7 +125,7 @@
             this.Bottom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bottom.BackgroundImage")));
             this.Bottom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Bottom.Location = new System.Drawing.Point(65, 37);
+            this.Bottom.Location = new System.Drawing.Point(65, 42);
             this.Bottom.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.Bottom.Name = "Bottom";
             this.Bottom.Size = new System.Drawing.Size(141, 14);
@@ -144,7 +144,8 @@
             this.Controls.Add(this.Ai_Profile);
             this.MaximumSize = new System.Drawing.Size(325, 0);
             this.Name = "Ai_Chat";
-            this.Size = new System.Drawing.Size(233, 51);
+            this.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.Size = new System.Drawing.Size(233, 56);
             this.Ai_Profile.ResumeLayout(false);
             this.Main.ResumeLayout(false);
             this.Main.PerformLayout();

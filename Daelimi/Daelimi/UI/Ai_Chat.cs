@@ -19,7 +19,7 @@ namespace AIChat
         }
         public void SetSize()
         {
-            Null.Width = 260 - Ai_ChatText.Width + 8;
+            Null.Width = 260 - Ai_ChatText.Width - 10;
         }
     }
 }

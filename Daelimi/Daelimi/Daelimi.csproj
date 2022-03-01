@@ -57,9 +57,6 @@
     <Compile Include="UI\Ai_Chat.Designer.cs">
       <DependentUpon>Ai_Chat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Chat.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="DaelimiForm.cs">
       <SubType>Form</SubType>
     </Compile>

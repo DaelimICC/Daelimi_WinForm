@@ -1,6 +1,6 @@
 ﻿namespace AIChat
 {
-    partial class Ai_Chat
+    partial class Chat
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -32,9 +32,9 @@
             this.tail = new System.Windows.Forms.Panel();
             this.picture35x35 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.Top = new System.Windows.Forms.Panel();
             this.Main = new System.Windows.Forms.Panel();
             this.Ai_ChatText = new System.Windows.Forms.Label();
-            this.Top = new System.Windows.Forms.Panel();
             this.Bottom = new System.Windows.Forms.Panel();
             this.Ai_Profile.SuspendLayout();
             this.Main.SuspendLayout();
@@ -78,6 +78,19 @@
             this.panel5.Size = new System.Drawing.Size(18, 68);
             this.panel5.TabIndex = 3;
             // 
+            // Top
+            // 
+            this.Top.AutoScroll = true;
+            this.Top.BackColor = System.Drawing.Color.Transparent;
+            this.Top.BackgroundImage = global::AIChat.Properties.Resources.top;
+            this.Top.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Top.Location = new System.Drawing.Point(65, 0);
+            this.Top.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.Top.Name = "Top";
+            this.Top.Size = new System.Drawing.Size(253, 14);
+            this.Top.TabIndex = 1;
+            // 
             // Main
             // 
             this.Main.AutoSize = true;
@@ -105,19 +118,6 @@
             this.Ai_ChatText.TabIndex = 0;
             this.Ai_ChatText.Text = "안녕하세요.\r\n대림이봇입니다.";
             // 
-            // Top
-            // 
-            this.Top.AutoScroll = true;
-            this.Top.BackColor = System.Drawing.Color.Transparent;
-            this.Top.BackgroundImage = global::AIChat.Properties.Resources.top;
-            this.Top.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Top.Location = new System.Drawing.Point(65, 0);
-            this.Top.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.Top.Name = "Top";
-            this.Top.Size = new System.Drawing.Size(253, 14);
-            this.Top.TabIndex = 1;
-            // 
             // Bottom
             // 
             this.Bottom.AllowDrop = true;
@@ -130,7 +130,7 @@
             this.Bottom.Size = new System.Drawing.Size(253, 14);
             this.Bottom.TabIndex = 2;
             // 
-            // Ai_Chat
+            // Chat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,7 +141,7 @@
             this.Controls.Add(this.Bottom);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.Ai_Profile);
-            this.Name = "Ai_Chat";
+            this.Name = "Chat";
             this.Size = new System.Drawing.Size(336, 68);
             this.Ai_Profile.ResumeLayout(false);
             this.Main.ResumeLayout(false);

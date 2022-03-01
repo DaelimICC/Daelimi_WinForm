@@ -42,11 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ai_Chat.cs">
+    <Compile Include="Chat.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ai_Chat.Designer.cs">
-      <DependentUpon>Ai_Chat.cs</DependentUpon>
+    <Compile Include="Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -57,8 +57,8 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Ai_Chat.resx">
-      <DependentUpon>Ai_Chat.cs</DependentUpon>
+    <EmbeddedResource Include="Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,19 +66,19 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\top.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="img\bottom.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="img\main.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\pngwing.com.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\tail.png" />
+    <None Include="Resources\tail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

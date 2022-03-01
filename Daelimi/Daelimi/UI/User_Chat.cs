@@ -19,7 +19,7 @@ namespace UserChat
         }
         public void SetSize()
         {
-            Null.Width = 260 - User_ChatText.Width + 8;
+            Null.Width = 260 - User_ChatText.Width + 12;
         }
     }
 }
