@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daelimi", "Daelimi\Daelimi.csproj", "{D32F0970-E130-4494-989E-D59DD310B701}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{0C45A8D0-0FAD-435E-8B4A-799D17F7DEC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +17,14 @@ Global
 		{D32F0970-E130-4494-989E-D59DD310B701}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D32F0970-E130-4494-989E-D59DD310B701}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D32F0970-E130-4494-989E-D59DD310B701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D1415F4-658D-46C4-BBE3-3027047AB218}.Debug|Any CPU.ActiveCfg = Debug
+		{8D1415F4-658D-46C4-BBE3-3027047AB218}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D1415F4-658D-46C4-BBE3-3027047AB218} = {0C45A8D0-0FAD-435E-8B4A-799D17F7DEC9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9D9F3AC7-4924-4F7E-A90D-FDF0F3213BBE}

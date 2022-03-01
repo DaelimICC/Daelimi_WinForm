@@ -48,7 +48,7 @@
             this.Ai_Profile.Dock = System.Windows.Forms.DockStyle.Left;
             this.Ai_Profile.Location = new System.Drawing.Point(0, 5);
             this.Ai_Profile.Name = "Ai_Profile";
-            this.Ai_Profile.Size = new System.Drawing.Size(65, 119);
+            this.Ai_Profile.Size = new System.Drawing.Size(65, 51);
             this.Ai_Profile.TabIndex = 0;
             // 
             // tail
@@ -75,7 +75,7 @@
             this.Null.Location = new System.Drawing.Point(311, 5);
             this.Null.MinimumSize = new System.Drawing.Size(14, 0);
             this.Null.Name = "Null";
-            this.Null.Size = new System.Drawing.Size(14, 119);
+            this.Null.Size = new System.Drawing.Size(14, 51);
             this.Null.TabIndex = 3;
             // 
             // Main
@@ -90,7 +90,7 @@
             this.Main.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.Main.Name = "Main";
             this.Main.Padding = new System.Windows.Forms.Padding(4, 3, 3, 3);
-            this.Main.Size = new System.Drawing.Size(246, 91);
+            this.Main.Size = new System.Drawing.Size(246, 23);
             this.Main.TabIndex = 2;
             // 
             // Ai_ChatText
@@ -102,9 +102,8 @@
             this.Ai_ChatText.Location = new System.Drawing.Point(4, 3);
             this.Ai_ChatText.MaximumSize = new System.Drawing.Size(210, 0);
             this.Ai_ChatText.Name = "Ai_ChatText";
-            this.Ai_ChatText.Size = new System.Drawing.Size(208, 85);
+            this.Ai_ChatText.Size = new System.Drawing.Size(0, 17);
             this.Ai_ChatText.TabIndex = 0;
-            this.Ai_ChatText.Text = "안녕이라고 시발련아안녕이라고 시발련아안녕이라고 시발련아안녕이라고 시발련아안녕이라고 시발련아안녕이라고 시발련아안녕이라고 시발련아안녕이라고 시발련아";
             // 
             // Top
             // 
@@ -125,7 +124,7 @@
             this.Bottom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bottom.BackgroundImage")));
             this.Bottom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Bottom.Location = new System.Drawing.Point(65, 110);
+            this.Bottom.Location = new System.Drawing.Point(65, 42);
             this.Bottom.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.Bottom.Name = "Bottom";
             this.Bottom.Size = new System.Drawing.Size(246, 14);
@@ -145,7 +144,7 @@
             this.MaximumSize = new System.Drawing.Size(325, 0);
             this.Name = "Ai_Chat";
             this.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.Size = new System.Drawing.Size(325, 124);
+            this.Size = new System.Drawing.Size(325, 56);
             this.Ai_Profile.ResumeLayout(false);
             this.Main.ResumeLayout(false);
             this.Main.PerformLayout();

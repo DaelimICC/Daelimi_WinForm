@@ -30,6 +30,7 @@ namespace Daelimi
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DaelimiForm));
             this.FormBar = new System.Windows.Forms.Panel();
             this.icon = new System.Windows.Forms.Panel();
             this.FormMinii = new System.Windows.Forms.Panel();
@@ -137,6 +138,7 @@ namespace Daelimi
             this.Controls.Add(this.Pl_Message);
             this.Controls.Add(this.FormBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DaelimiForm";
             this.Text = "Daelimi";
             this.FormBar.ResumeLayout(false);

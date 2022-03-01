@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace Daelimi
 
     public partial class DaelimiForm : Form
     {
+
         private void SendOnClick(object sender, EventArgs e)
         {
             if (MessageBox.Text != FAQPlaceholder)
@@ -19,15 +21,31 @@ namespace Daelimi
                 if (MessageBox.Text != string.Empty)
                 {
                     UserQustion = MessageBox.Text;
-                    Ai_AddChat(UserQustion);
+                    User_AddChat(UserQustion);
+                    testfilter(UserQustion);
 
-                    // Api api = new Api();
-                    // AIAnsower = api.Api_Post(UserQustion, 1);
-                    // Ai_AddChat(AIAnsower);
+                    Api api = new Api();
+                    AIAnsower = api.Api_Post(UserQustion, filter);
+                    Ai_AddChat(AIAnsower);
                     MessageRest();
                 }
             }
         }
+        public void testfilter(string text)
+        {
+            int result = 0;
+            if (text == "장소찾기")
+            {
+                Ai_AddChat("filter = 1");
+                filter = 1;
+            }
+            else if (text == "문의하기")
+            {
+                Ai_AddChat("filter = 0");
+                filter = 0;
+            }
+        }
+
         #region 메세지박스 상호작용
         private void MessageControll()
         {
@@ -39,7 +57,7 @@ namespace Daelimi
         }
         private void OnLoad(object sender, EventArgs e)
         {
-            Ai_AddChat(AIAnsower);
+            Ai_AddChat(test);
         }
 
         private void MessageRest()

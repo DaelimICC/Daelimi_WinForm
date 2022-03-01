@@ -10,6 +10,5 @@ namespace Daelimi
 {
     internal class Filter
     {
-        
     }
 }
