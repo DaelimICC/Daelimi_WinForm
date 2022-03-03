@@ -16,33 +16,15 @@ namespace Daelimi
 
         private void SendOnClick(object sender, EventArgs e)
         {
-            if (MessageBox.Text != FAQPlaceholder)
+            Api api = new Api();
+            Filter filter = new Filter();
+            if (MessageBox.Text != FAQPlaceholder && MessageBox.Text != string.Empty)
             {
-                if (MessageBox.Text != string.Empty)
-                {
                     UserQustion = MessageBox.Text;
+                    AIAnsower = api.Api_Post(UserQustion, filter.CheckPlace(UserQustion));
                     User_AddChat(UserQustion);
-                    testfilter(UserQustion);
-
-                    Api api = new Api();
-                    AIAnsower = api.Api_Post(UserQustion, filter);
                     Ai_AddChat(AIAnsower);
                     MessageRest();
-                }
-            }
-        }
-        public void testfilter(string text)
-        {
-            int result = 0;
-            if (text == "장소찾기")
-            {
-                Ai_AddChat("filter = 1");
-                filter = 1;
-            }
-            else if (text == "문의하기")
-            {
-                Ai_AddChat("filter = 0");
-                filter = 0;
             }
         }
 
@@ -57,7 +39,7 @@ namespace Daelimi
         }
         private void OnLoad(object sender, EventArgs e)
         {
-            Ai_AddChat(test);
+            Ai_AddChat(AIAnsower);
         }
 
         private void MessageRest()
