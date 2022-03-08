@@ -1,23 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Daelimi
 {
 
-    public partial class DaelimiForm : Form
+    public partial class DaelimiForm
     {
-
+        Api api = new Api();
+        Filter filter = new Filter();
         private void SendOnClick(object sender, EventArgs e)
         {
-            Api api = new Api();
-            Filter filter = new Filter();
             if (MessageBox.Text != FAQPlaceholder && MessageBox.Text != string.Empty)
             {
                     UserQustion = MessageBox.Text;
@@ -39,7 +31,8 @@ namespace Daelimi
         }
         private void OnLoad(object sender, EventArgs e)
         {
-            Ai_AddChat(AIAnsower);
+            Ai_AddChat("안녕하세요 대림이봇입니다.");
+            Ai_AddChat("온전한 문장으로 끝내주셔야 \n이해할 수 있습니다.");
         }
 
         private void MessageRest()
@@ -75,7 +68,6 @@ namespace Daelimi
                 MessageBox.ForeColor = Color.Silver;
             }
         }
-
         #endregion
         
     }

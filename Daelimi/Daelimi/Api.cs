@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 
 namespace Daelimi
@@ -13,7 +9,7 @@ namespace Daelimi
     {
         public string Api_Post(String message, int filter)
         {
-            string url = "http://141.164.61.172:8000/api/"; 
+            string url = "https://api-daelimi.soplay.dev/api/";
             string result = String.Empty;
             HttpWebRequest request = (HttpWebRequest) WebRequest.Create(url);
 

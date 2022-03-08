@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace Daelimi
 {
@@ -21,7 +15,7 @@ namespace Daelimi
                                                한림관|체육관|홍지관|언어치료센터|홍지관|글로벌잡스테이션|
                                            잡스테이션|홍지관|대림아트홀|퇴계관|에이스스테이션|퇴계관|
                                            대림학보사|대학본부|입학팀|대학본부|교육행정팀|대학본부|산학협력단|
-                                             대학본부|링크사업단|임곡관|보건실|전산관|스마트스테이션");
+                                             대학본부|링크사업단|임곡관|보건실|전산관|스마트스테이션|교내카페|카페");
 
             Regex RoomNum = new Regex(@"[ABCDEFGHJKLMNPV]0\d{3}");
 
